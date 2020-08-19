@@ -86,7 +86,7 @@ resource "aws_instance" "wordpress_mariadb" {
   subnet_id                   = aws_subnet.subnet_wordpress.id
   private_ip                  = "10.42.1.100"
   associate_public_ip_address = "true"
-  user_data                   = file("../Scripts/instance_init1.sh")
+  user_data                   = file("../Scripts/instance_init2.sh")
   tags = {
     Name = "wordpress_mariadb"
   }
