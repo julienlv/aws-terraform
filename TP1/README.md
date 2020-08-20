@@ -4,7 +4,7 @@
 
 On crée une nouvelle paire de clés (firstkeypair.pem) et on la sauvegarde afin qu'on puisse se connecter en SSH à l'instance.
 
-### On se connecte en SSH à l'instance avec la paire de clés 
+### On se connecte en SSH à l'instance avec la paire de clés ainsi que l'IP publique de l'instance
 ~~~~
 $ ssh -i chemin/vers/firstkeypair.pem ubuntu@ip_publique_de_l'instance
 ~~~~
