@@ -74,10 +74,10 @@ bind-address            = 0.0.0.0
 * #### Groupe de sécurité
 On configure une règle entrante sur les 2 instances pour la communication 
 
-Pour l'instance WordPress (en 172.31.48.58)
+Pour l'instance WordPress (en 172.31.48.58) :
 Ajouter Tout le trafic - Tous - Tout les ports - Source 172.31.51.160/0
 
-Pour l'instance MariaDB (en 172.31.51.160)
+Pour l'instance MariaDB (en 172.31.51.160) :
 Ajouter Tout le trafic - Tous - Tout les ports - Source 172.31.48.58/0
 
 De plus, on ajoute une règle entrante pour l'affichage du Wordpress depuis l'extérieur
