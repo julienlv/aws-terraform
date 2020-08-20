@@ -6,23 +6,23 @@ On crée une nouvelle paire de clés (firstkeypair.pem) et on la sauvegarde afin
 
 ### On se connecte en SSH à l'instance avec la paire de clés ainsi que l'IP publique de l'instance
 ~~~~
-$ ssh -i chemin/vers/firstkeypair.pem ubuntu@ip_publique_de_l'instance
+ssh -i chemin/vers/firstkeypair.pem ubuntu@ip_publique_de_l'instance
 ~~~~
 
 ### Mise à jour des paquets 
 ~~~~
-$ ubuntu@ip_publique_de_l'instance:~$ sudo apt -y update && sudo -y apt upgrade
+ubuntu@ip_publique_de_l'instance:~$ sudo apt -y update && sudo -y apt upgrade
 ~~~~
 
 ### Installation d'Apache2 et vérification du fonctionnement
 ~~~~
-$ ubuntu@ip_publique_de_l'instance:~$ sudo apt -y install apache2
-$ ubuntu@ip_publique_de_l'instance:~$ sudo wget -O - http://localhost/
+ubuntu@ip_publique_de_l'instance:~$ sudo apt -y install apache2
+ubuntu@ip_publique_de_l'instance:~$ sudo wget -O - http://localhost/
 ~~~~
 * ##### Installation de w3m qui est un navigateur web via un terminal (ou une console) afin de visualiser le site 
 ~~~~
-$ ubuntu@ip_publique_de_l'instance:~$ sudo apt -y install w3m
-$ ubuntu@ip_publique_de_l'instance:~$ sudo w3m http://localhost/
+ubuntu@ip_publique_de_l'instance:~$ sudo apt -y install w3m
+ubuntu@ip_publique_de_l'instance:~$ sudo w3m http://localhost/
 ~~~~
 
 On voit le site sur l'instance via la connexion SSH.
