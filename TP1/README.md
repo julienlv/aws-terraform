@@ -19,8 +19,10 @@ $ ubuntu@ip_publique_de_l'instance:~$ sudo apt -y update && sudo -y apt upgrade
 $ ubuntu@ip_publique_de_l'instance:~$ sudo apt -y install apache2
 $ ubuntu@ip_publique_de_l'instance:~$ sudo wget -O - http://localhost/
 ~~~~
-#### Installation de w3m qui est un navigateur web via un terminal (ou une console)
+* ##### Installation de w3m qui est un navigateur web via un terminal (ou une console) afin de visualiser le site 
 ~~~~
 $ ubuntu@ip_publique_de_l'instance:~$ sudo apt -y install w3m
 $ ubuntu@ip_publique_de_l'instance:~$ sudo w3m http://localhost/
 ~~~~
+
+On voit le site sur l'instance via la connexion SSH.
